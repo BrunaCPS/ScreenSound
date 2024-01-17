@@ -79,12 +79,6 @@ void MostrarBandasRegistradas()
     Console.WriteLine("Lista de bandas registradas");
     Console.WriteLine("***************************");
 
-/*
-    for (int i = 0; i < listaDasBandas.Count; i++)
-    {
-        Console.WriteLine($"Banda: {listaDasBandas[i]}");
-    }*/
-
 //Para cada banda na lista de bandas, exiba
 foreach(string banda in listaDasBandas){
     Console.WriteLine($"Banda: {banda}");
