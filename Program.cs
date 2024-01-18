@@ -2,7 +2,12 @@
 string mensagemDeBoasVindas = "\nBoas vindas ao Screen Sound";
 
 //Criação de Lista
-List<string> listaDasBandas = new List<string> {"U2", "The Beatles", "Calipson"};
+//List<string> listaDasBandas = new List<string> {"U2", "The Beatles", "Calipson"};
+
+Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
+bandasRegistradas.Add("Link Park", new List<int>{10,8,6});
+bandasRegistradas.Add("The Beatles", new List<int>());
+
 
 //Padrão Pascal Case em funções
 void ExibirLogo()
@@ -61,7 +66,7 @@ void RegistrarBanda()
 
     Console.Write("Digite o nome da banda que deseja registrar: ");
     string nomeDaBanda = Console.ReadLine()!;
-    listaDasBandas.Add(nomeDaBanda);
+    bandasRegistradas.Add(nomeDaBanda,new List<int>());
     //Interpolação de String
     Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso! ");
     //Função que espera em milisegundos
@@ -76,7 +81,7 @@ void MostrarBandasRegistradas()
     ExibirTituloDaOpcao("Listagem de todas as bandas registradas");
 
 //Para cada banda na lista de bandas, exiba
-foreach(string banda in listaDasBandas){
+foreach(string banda in bandasRegistradas.Keys){
     Console.WriteLine($"Banda: {banda}");
 }
 
