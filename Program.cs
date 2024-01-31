@@ -3,7 +3,7 @@ string mensagemDeBoasVindas = "\nBoas vindas ao Screen Sound";
 
 //Classe Dictionary que recebe uma chave (nome da banda) e os valores em lista (avaliacao delas)
 Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
-bandasRegistradas.Add("Link Park", new List<int> { 10, 8, 6 });
+bandasRegistradas.Add("Linkin Park", new List<int> { 10, 8, 6 });
 bandasRegistradas.Add("The Beatles", new List<int>());
 
 //Padrão Pascal Case em funções
@@ -93,7 +93,6 @@ void ExibirTituloDaOpcao(string titulo)
     Console.WriteLine(asteriscos);
     Console.WriteLine(titulo);
     Console.WriteLine(asteriscos + "\n");
-
 }
 
 void AvaliarUmaBanda()
