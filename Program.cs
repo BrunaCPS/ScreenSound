@@ -139,7 +139,10 @@ void ExibirMedia(){
 
     //verificar se a banda existe, se sim realiza o calculo
     if(bandasRegistradas.ContainsKey(nomeDaBanda)){
-        int notaBanda = bandasRegistradas[nomeDaBanda].nota
+        List<int> notasDaBanda = bandasRegistradas[nomeDaBanda];
+        //método Average() para cálculo de média
+        Console.WriteLine($"A média da banda {notasDaBanda} é {notasDaBanda.Average()}");
+        Console.WriteLine("");
 
 
     }else{
